@@ -55,7 +55,7 @@ app.get("/binance-ticker", (req, res) => {
 });
 
 app.get("/binance-exchange", (req, res) =>
-  safeRequest("https://cache.bitzup.com/exchageinfoall.php", res, "Exchange")
+  safeRequest("https://test.bitzup.com/market/exchangeinfoall", res, "Exchange")
 );
 
 app.get("/binance-order", (req, res) => {
